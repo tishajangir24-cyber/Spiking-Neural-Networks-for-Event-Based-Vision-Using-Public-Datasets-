@@ -205,3 +205,38 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# -----------------------------
+# Research sprint additions
+# -----------------------------
+
+# Colab / ML runtime artifacts
+.tensorboard/
+wandb/
+mlruns/
+lightning_logs/
+.cache/
+
+# Raw & processed data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pkl
+
+# Large logs
+logs/*
+!logs/README.md
+
+# Secrets
+secrets/
+credentials/
+*.key
+*.pem
